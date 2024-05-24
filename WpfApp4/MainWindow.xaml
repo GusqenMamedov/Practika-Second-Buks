@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Поиск удвоенных букв"
+        Height="200"
+        Width="300">
+    <Grid>
+        <TextBlock Text="Введите строку:" Margin="10,10,0,0" />
+        <TextBox Name="txtInput" Margin="10,35,10,0" />
+        <Button Name="btnFindDuplicates" Content="Найти дубликаты" Margin="10,65,10,0" Click="btnFindDuplicates_Click" />
+        <TextBlock Text="Результат:" Margin="10,95,0,0" />
+        <TextBox Name="txtResult" IsReadOnly="True" Margin="10,120,10,0" />
+    </Grid>
+</Window>
